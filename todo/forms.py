@@ -19,13 +19,6 @@ class RegistrationForm(UserCreationForm):
             "password2",
         )
 
-    first_name = forms.CharField()
-    last_name = forms.CharField()
-    username = forms.CharField()
-    email = forms.CharField()
-    password1 = forms.CharField()
-    password2 = forms.CharField()
-
 class ProfileForm(UserChangeForm):
     class Meta:
         model = User
@@ -34,8 +27,3 @@ class ProfileForm(UserChangeForm):
             "last_name",
             "username",
             "email",)
-
-    first_name = forms.CharField()
-    last_name = forms.CharField()
-    username = forms.CharField()
-    email = forms.CharField()
